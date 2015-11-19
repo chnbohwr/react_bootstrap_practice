@@ -24,9 +24,3 @@ export function getUserFromHttp(data = []){
     user:data
   }
 }
-
-export function fooBar(reddit) {
-  return function (dispatch) {
-    return GET(CONST.USER_URL).then(users=>dispatch(getUserFromHttp(users)))
-  }
-}
